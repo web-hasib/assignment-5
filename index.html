@@ -1,11 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment-5 by Hasib</title>
-</head>
-<body>
-    <p>hello world</p>
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-200">
+    <section class="w-10/12 mx-auto">
+      <header class="pt-4">
+        <nav class="flex justify-between bg-white p-3 rounded-xl">
+          <div class="flex items-center">
+            <img class="pr-3 h-3/4" src="./assets/logo.png" alt="" />
+            <h1 class="text-xl">Dev<span class="font-bold">Board</span></h1>
+          </div>
+          <div class="w-36 flex justify-between items-center">
+            <div class="flex py-2 px-3 rounded-3xl bg-slate-100">
+              <img
+                class="w-1/2 h-1/2 mr-3"
+                src="./assets/checkbox.png"
+                alt=""
+              />
+              <span class="text-lg font-bold">20</span>
+            </div>
+            <button>
+              <img src="./assets/theme-btn.png" alt="" />
+            </button>
+          </div>
+        </nav>
+      </header>
+      <!-- main section  -->
+
+      <main class="pt-4 pb-5">
+        <section class="main-container grid grid-cols-4 gap-4">
+         
+          <div class="bg-white rounded-lg col-span-3">
+            <div class="grid grid-cols-6 gap-4 px-4 py-3">
+              <div class="flex items-center p-3 bg-slate-100 rounded-lg">
+                <div class="p-2 bg-white rounded-[50%]">
+                  <img
+                    class="w-auto h-4 mr-3"
+                    src="./assets/checkbox.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p class="text-xs">Task Assigned</p>
+                  <span class="text-xl font-bold text-gray-600">6</span>
+                </div>
+              </div>
+              <div class="col-span-4">
+                <div
+                  class="h-20 m-1 rounded-lg h-14 bg-gradient-to-r from-[#6C7FFA] to-[#9BA8F8] flex items-center justify-around"
+                >
+                  <img class="w-16 pt-2" src="./assets/board.png" alt="" />
+                  <p class="text-2xl text-white">
+                    Discover Something New Today!
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center bg-slate-100 rounded-lg p-3">
+                <div class="p-2 bg-white rounded-[50%]">
+                  <img
+                    class="w-auto h-4 mr-3"
+                    src="./assets/calender.png"
+                    alt=""
+                  />
+                </div>
+                <div id="date" class="text-sm font-bold"></div>
+              </div>
+              
+              <!-- card section  -->
+              
+              <div class="col-span-2">
+                <div class="card card-compact bg-slate-100 w-auto shadow-sm">
+                  <div class="card-body">
+                    <div class="rounded-lg">
+                      <span class="bg-white px-2 py-1 rounded-lg text-xs"
+                        >ShopEase</span
+                      >
+                    </div>
+                    <h2 class="card-title text-2xl mt-2">Fix Mobile Button Issue </h2>
+                    <div class="rounded-lg">
+                        <div class="bg-white px-2 py-1 rounded-lg max-h-16 overflow-hidden"
+                          >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                          and ensure onClick works properly</div
+                        >
+                      </div>
+                      <hr class="">
+                      <div class="flex justify-between items-center">
+                        <p class="text-gray-500">
+                            Dadeline
+                            <br>
+                            <span class="text-base font-semibold">21 March 2025</span>
+                        </p>
+                          <div class="">
+                            <button class="py-1 rounded-lg bg-blue-800 text-white px-4">Completed</button>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-span-2">
+                <div class="card card-compact bg-slate-100 w-auto shadow-sm">
+                  <div class="card-body">
+                    <div class="rounded-lg">
+                      <span class="bg-white px-2 py-1 rounded-lg text-xs"
+                        >ShopEase</span
+                      >
+                    </div>
+                    <h2 class="card-title text-2xl mt-2">Fix Mobile Button Issue </h2>
+                    <div class="rounded-lg">
+                        <div class="bg-white px-2 py-1 rounded-lg max-h-16 overflow-hidden"
+                          >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                          and ensure onClick works properly</div
+                        >
+                      </div>
+                      <hr class="">
+                      <div class="flex justify-between items-center">
+                        <p class="text-gray-500">
+                            Dadeline
+                            <br>
+                            <span class="text-base font-semibold">21 March 2025</span>
+                        </p>
+                          <div class="">
+                            <button class="py-1 rounded-lg bg-blue-800 text-white px-4">Completed</button>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-span-2">
+                <div class="card card-compact bg-slate-100 w-auto shadow-sm">
+                  <div class="card-body">
+                    <div class="rounded-lg">
+                      <span class="bg-white px-2 py-1 rounded-lg text-xs"
+                        >ShopEase</span
+                      >
+                    </div>
+                    <h2 class="card-title text-2xl mt-2">Fix Mobile Button Issue </h2>
+                    <div class="rounded-lg">
+                        <div class="bg-white px-2 py-1 rounded-lg max-h-16 overflow-hidden"
+                          >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                          and ensure onClick works properly</div
+                        >
+                      </div>
+                      <hr class="">
+                      <div class="flex justify-between items-center">
+                        <p class="text-gray-500">
+                            Dadeline
+                            <br>
+                            <span class="text-base font-semibold">21 March 2025</span>
+                        </p>
+                          <div class="">
+                            <button class="py-1 rounded-lg bg-blue-800 text-white px-4">Completed</button>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-span-2">
+                <div class="card card-compact bg-slate-100 w-auto shadow-sm">
+                  <div class="card-body">
+                    <div class="rounded-lg">
+                      <span class="bg-white px-2 py-1 rounded-lg text-xs"
+                        >ShopEase</span
+                      >
+                    </div>
+                    <h2 class="card-title text-2xl mt-2">Fix Mobile Button Issue </h2>
+                    <div class="rounded-lg">
+                        <div class="bg-white px-2 py-1 rounded-lg max-h-16 overflow-hidden"
+                          >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                          and ensure onClick works properly</div
+                        >
+                      </div>
+                      <hr class="">
+                      <div class="flex justify-between items-center">
+                        <p class="text-gray-500">
+                            Dadeline
+                            <br>
+                            <span class="text-base font-semibold">21 March 2025</span>
+                        </p>
+                          <div class="">
+                            <button class="py-1 rounded-lg bg-blue-800 text-white px-4">Completed</button>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-span-2">
+                <div class="card card-compact bg-slate-100 w-auto shadow-sm">
+                  <div class="card-body">
+                    <div class="rounded-lg">
+                      <span class="bg-white px-2 py-1 rounded-lg text-xs"
+                        >ShopEase</span
+                      >
+                    </div>
+                    <h2 class="card-title text-2xl mt-2">Fix Mobile Button Issue </h2>
+                    <div class="rounded-lg">
+                        <div class="bg-white px-2 py-1 rounded-lg max-h-16 overflow-hidden"
+                          >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                          and ensure onClick works properly</div
+                        >
+                      </div>
+                      <hr class="">
+                      <div class="flex justify-between items-center">
+                        <p class="text-gray-500">
+                            Dadeline
+                            <br>
+                            <span class="text-base font-semibold">21 March 2025</span>
+                        </p>
+                          <div class="">
+                            <button class="py-1 rounded-lg bg-blue-800 text-white px-4">Completed</button>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-span-2">
+                <div class="card card-compact bg-slate-100 w-auto shadow-sm">
+                  <div class="card-body">
+                    <div class="rounded-lg">
+                      <span class="bg-white px-2 py-1 rounded-lg text-xs"
+                        >ShopEase</span
+                      >
+                    </div>
+                    <h2 class="card-title text-2xl mt-2">Fix Mobile Button Issue </h2>
+                    <div class="rounded-lg">
+                        <div class="bg-white px-2 py-1 rounded-lg max-h-16 overflow-hidden"
+                          >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                          and ensure onClick works properly</div
+                        >
+                      </div>
+                      <hr class="">
+                      <div class="flex justify-between items-center">
+                        <p class="text-gray-500">
+                            Dadeline
+                            <br>
+                            <span class="text-base font-semibold">21 March 2025</span>
+                        </p>
+                          <div class="">
+                            <button class="py-1 rounded-lg bg-blue-800 text-white px-4">Completed</button>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <!-- Activity section  -->
+
+          <div class="bg-white rounded-lg">
+            
+            <div class="flex items-center justify-center py-4 ">
+                <img class="w-auto h-4 mr-3" src="./assets/activity.png" alt="">
+                <p class="text-gray-600">Activity log</p>
+            </div>
+            <div class="flex">
+
+                <button class="bg-blue-800 mx-auto text-white px-3 py-1 rounded-md mb-4">Clear History</button>
+            </div>
+            <hr>
+            <!-- activity container  -->
+            <div id="activity-container">
+
+            </div>
+
+          </div>
+        </section>
+      </main>
+    </section>
+
+    <script>
+      
+    </script>
+
+    <script src="./script/app.js"></script>
+  </body>
 </html>
+
+
+
+<!-- card 
+  -->
+
+
+  <!-- <div class="col-span-2">
+    <div class="card card-compact bg-slate-200 w-auto shadow-sm">
+      <div class="card-body">
+        <div class="rounded-lg">
+          <span class="bg-white px-2 py-1 rounded-lg text-xs"
+            >ShopEase</span
+          >
+        </div>
+        <h2 class="card-title text-2xl mt-2">Fix Mobile Button Issue </h2>
+        <div class="rounded-lg">
+            <div class="bg-white px-2 py-1 rounded-lg max-h-16 overflow-hidden"
+              >Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+              and ensure onClick works properly</div
+            >
+          </div>
+          <hr class="">
+          <div class="flex justify-between items-center">
+            <p class="text-gray-500">
+                Dadeline
+                <br>
+                <span class="text-base font-semibold">21 March 2025</span>
+            </p>
+              <div class="">
+                <button class="py-1 rounded-lg bg-blue-800 text-white px-4">Completed</button>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div> -->
