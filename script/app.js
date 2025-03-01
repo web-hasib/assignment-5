@@ -2,7 +2,7 @@
 document.getElementById("date").innerText = new Date().toDateString();
 
 document.getElementById("blog-btn").addEventListener("click", function () {
-  window.location.href = "../discover.html";
+  window.location.href = "discover.html";
 });
 
 // const time = new Date().toDateString();
