@@ -10,6 +10,23 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .comment{
+        border-radius: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #a6b8e42e;
+        margin-bottom: 10px;
+        margin: 5px;
+        color: rgba(0, 0, 0, 0.687);
+      }
+      .disabled{
+        cursor: not-allowed;
+        opacity: 0.5;
+        pointer-events: none;
+        background: #7c7979;
+      }
+    </style>
   </head>
   <body class="bg-slate-200">
     <section class="w-10/12 mx-auto">
@@ -26,7 +43,7 @@
                 src="./assets/checkbox.png"
                 alt=""
               />
-              <span class="text-lg font-bold">20</span>
+              <span id="completed-task" class="text-lg font-bold">20</span>
             </div>
             <button>
               <img src="./assets/theme-btn.png" alt="" />
@@ -51,10 +68,12 @@
                 </div>
                 <div>
                   <p class="text-xs">Task Assigned</p>
-                  <span class="text-xl font-bold text-gray-600">6</span>
+                  <span id="task-count" class="text-xl font-bold text-gray-600">6</span>
                 </div>
               </div>
-              <div class="col-span-4">
+
+              <!-- blog button  -->
+              <div id="blog-btn" class="col-span-4 cursor-pointer">
                 <div
                   class="h-20 m-1 rounded-lg h-14 bg-gradient-to-r from-[#6C7FFA] to-[#9BA8F8] flex items-center justify-around"
                 >
@@ -64,6 +83,7 @@
                   </p>
                 </div>
               </div>
+
               <div class="flex items-center bg-slate-100 rounded-lg p-3">
                 <div class="p-2 bg-white rounded-[50%]">
                   <img
@@ -100,7 +120,7 @@
                             <span class="text-base font-semibold">21 March 2025</span>
                         </p>
                           <div class="">
-                            <button class="py-1 rounded-lg bg-blue-800 text-white px-4">Completed</button>
+                            <button id="completed-btn-1" class="py-1 rounded-lg completed-btn bg-blue-800 text-white px-4">Completed</button>
                           </div>
                       </div>
                   </div>
@@ -128,7 +148,7 @@
                             <span class="text-base font-semibold">21 March 2025</span>
                         </p>
                           <div class="">
-                            <button class="py-1 rounded-lg bg-blue-800 text-white px-4">Completed</button>
+                            <button id="completed-btn-2" class="py-1 rounded-lg completed-btn bg-blue-800 text-white px-4">Completed</button>
                           </div>
                       </div>
                   </div>
@@ -157,7 +177,7 @@
                             <span class="text-base font-semibold">21 March 2025</span>
                         </p>
                           <div class="">
-                            <button class="py-1 rounded-lg bg-blue-800 text-white px-4">Completed</button>
+                            <button id="completed-btn-3" class="py-1 rounded-lg completed-btn bg-blue-800 text-white px-4">Completed</button>
                           </div>
                       </div>
                   </div>
@@ -186,7 +206,7 @@
                             <span class="text-base font-semibold">21 March 2025</span>
                         </p>
                           <div class="">
-                            <button class="py-1 rounded-lg bg-blue-800 text-white px-4">Completed</button>
+                            <button id="completed-btn-4" class="py-1 rounded-lg completed-btn bg-blue-800 text-white px-4">Completed</button>
                           </div>
                       </div>
                   </div>
@@ -215,7 +235,7 @@
                             <span class="text-base font-semibold">21 March 2025</span>
                         </p>
                           <div class="">
-                            <button class="py-1 rounded-lg bg-blue-800 text-white px-4">Completed</button>
+                            <button id="completed-btn-5" class="py-1 rounded-lg completed-btn bg-blue-800 text-white px-4">Completed</button>
                           </div>
                       </div>
                   </div>
@@ -244,7 +264,7 @@
                             <span class="text-base font-semibold">21 March 2025</span>
                         </p>
                           <div class="">
-                            <button class="py-1 rounded-lg bg-blue-800 text-white px-4">Completed</button>
+                            <button id="completed-btn-6" class="py-1 rounded-lg completed-btn bg-blue-800 text-white px-4">Completed</button>
                           </div>
                       </div>
                   </div>
