@@ -45,6 +45,7 @@ document
 
     //    alert("Task count: " + taskCount);
     console.log(activityContainer.innerText);
+    
   });
 // 2nd card
 
@@ -192,11 +193,71 @@ document
 
 //   recheck buttons 
 
-// const completedButton1= document.getElementsByClassName('completed-btn')[0]
-// console.log(completedButton1)
+// const completedButton1= document.getElementsByClassName('completed-btn')
+// // console.log(completedButton1[0].innerText);
+
+// for (let i = 0; i < completedButton1.length; i++) {
+// const recent = completedButton1[i];
+// if(recent.classList.contains('disabled')){
+// console.log('yes');
+// }
+// else{
+//   console.log('no');
+// }
+// console.log(recent);
+// }
+  
+
 // if (completedButton1.classList.contains('disabled')){
 //     alert('yess')
 // }
 // else{
 //     console.log("noooo")
 // }
+
+// const allDisabled = document.querySelectorAll('.completed-btn');
+
+// // classList.contains('disabled');
+// console.log(allDisabled);
+// for (let i = 0; i < allDisabled.length; i++) {
+//   const recent = allDisabled[i];
+//   if(recent.classList.contains('disabled')){
+//     // recent.classList.remove('disabled');
+//     alert('yess');
+//   }
+//   else{
+//     // recent.classList.add('disabled');
+//   }
+// }
+                // if (allDisabled.classList.contains('disabled')) {
+                //     alert('All buttons are disabled!');
+                // }
+
+
+
+// Activity section 
+
+document.getElementById('clear-history-btn').addEventListener('click',function(){
+  document.getElementById('activity-container').innerHTML = '';
+});
+
+// adding theme button to random color 
+
+const button = document.getElementById('theme-btn');
+        function getRandomColor() {
+            const red = Math.random() * 200; 
+            const green = Math.random() * 200; 
+            const blue = Math.random() * 200;
+            const convertedRed = Math.floor(red);
+            const convertedGreen = Math.floor(green);
+            const convertedBlue = Math.floor(blue);
+            let color = "rgb(" + convertedRed + "," + convertedGreen + "," + convertedBlue + ")";
+            console.log(color);
+
+            return color; 
+        }
+        button.addEventListener('click', function() {
+            document.body.style.backgroundColor = getRandomColor();
+        });
+
+
